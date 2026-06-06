@@ -1,0 +1,25 @@
+name: Download Repository as ZIP
+on:
+  workflow_dispatch:
+jobs:
+  download-zip:
+    name: Download repository as ZIP
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+      
+      - name: Create ZIP archive
+        run: |
+          cd $GITHUB_WORKSPACE
+          zip -r ai-agent-rule-system-template.zip .
+      
+      - name: Upload ZIP artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: ai-agent-rule-system-template.zip
+          path: ./ai-agent-rule-system-template.zip
+          retention-days: 1
