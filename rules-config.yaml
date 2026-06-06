@@ -25,3 +25,12 @@ rules:
       - testing
       - qa
       - ci-cd
+  java-spring-postgresql:
+    path: rules/java-spring-postgresql.md
+    description: Java, Spring Boot, and PostgreSQL development standards.
+    tags:
+      - java
+      - spring-boot
+      - postgresql
+      - backend
+      - architecture
