@@ -1,0 +1,22 @@
+# Created by AI Agent Rule System Template
+# Ignore temporary files and IDE settings
+.DS_Store
+Thumbs.db
+*~
+*.swp
+*.swo
+.vscode/
+.idea/
+__pycache__/
+.env
+.DS_Store
+node_modules/
+test-reports/
+build/
+dist/
+out/
+*.log
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
