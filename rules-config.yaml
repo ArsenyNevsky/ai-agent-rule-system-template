@@ -1,0 +1,27 @@
+version: 1.0
+name: AI Agent Rule System
+description: Centralized rule management for AI agents across projects.
+author: Arseny Nevsky
+repository_url: https://github.com/ArsenyNevsky/ai-agent-rule-system-template
+rules:
+  security:
+    path: rules/security.md
+    description: Security best practices and compliance standards.
+    tags:
+      - security
+      - compliance
+      - risk
+  typescript:
+    path: rules/typescript.md
+    description: TypeScript coding standards and type safety.
+    tags:
+      - typescript
+      - typing
+      - development
+  testing:
+    path: rules/testing.md
+    description: Testing requirements and coverage standards.
+    tags:
+      - testing
+      - qa
+      - ci-cd
